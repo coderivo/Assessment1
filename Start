@@ -1,0 +1,40 @@
+package comprog1lab;
+
+import java.util.Scanner;
+
+public class Activity1 {
+    
+   public static void main (String[]args) {
+       
+    System.out.println("Enter 1 If you're an BSCS student while enter 2 if you're a BSIT student");
+    System.out.println("");
+		
+	Scanner myObj = new Scanner(System.in);
+		
+	    System.out.print("Enter number: ");
+	    String course = myObj.nextLine();
+	    
+	if (course.equals("1")) {
+	    	System.out.printf("Enter name: ");
+	    	String bscs1 = myObj.nextLine();
+	    	
+	    	System.out.println("Good Bye " + bscs1);
+	    	
+        } else if (course.equals("2")) {
+	    	
+                System.out.println("What speciality you like?");
+	    	System.out.println("A. Networking");
+	    	System.out.println("B. Designing");
+	    	System.out.println("C. Programming");
+	    	
+	    	System.out.print("Enter your asnwer: ");
+	    	String bsit = myObj.nextLine();
+	    	
+	    	System.out.println("You may continue studying!");
+	    	
+	    } else System.out.println("Invalid course");
+	} 
+
+   }
+    
+
